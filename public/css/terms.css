@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: hidden;
+}
+
+#formTerm {
+  padding-top: 5%;
+  text-align: center;
+}
+
+/*
+#formTerm select,
+input[type="text"] {
+  width: 80%;
+  background-color: #555555;
+  opacity: 0.5;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin-top: 5%;
+}
+*/
+#formTerm select,
+input[type="text"] {
+  width: 80%;
+  background-color: #ffffff;
+  opacity: 1;
+  color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin-top: 5%;
+}
+
+/*
+input::placeholder {
+  color: darkblue !important;
+}
+*/
+
+#formTerm input[type="submit"] {
+  width: 80%;
+  background-color: #ffffff;
+  opacity: 1;
+  color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin-top: 5%;
+}
+
+#formTerm input[type="text"]::placeholder {
+  color: darkblue;
+  padding-left: 11%;
+}
+
+#info {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: darkgreen;
+}
+
+/*
+#izaberiKategoriju {
+  text-align: center !important;
+}
+*/
+
+#selectCateg {
+  text-align: center;
+}
+
+.responsive {
+  padding-top: 25%;
+  width: 110%;
+  height: auto;
+}
+
+.infoBackground {
+  background-color: red;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Dobrodošli Na Sajt Zanimljive Geografije!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="nav" class="row">
+        <div id="menu" class="col-sm-9">
+          <!-- test -->
+          <ul class="nav justify-content-center">
+            <!--
+            <li class="nav-item">
+              <a class="nav-link active" id="home_page" href="#">Start</a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link" id="terms" href="terms.html">Pojmovi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="hof" href="hallOfFame.html">Najbolji korisnici (In construction!)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <div id="hi"></div>
+          <img src="images/User.png" id="user_logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <img src="./images/geografija.png" alt="Geografija" class="responsive">          
+          <form id="formUsername" class="form-group">
+            <input 
+              type="text"
+              class="form-control"
+              id="inputUsername"
+              placeholder="Unesi korisničko ime..."
+            />
+            <br>
+            <input type="submit" id="submitUsername" class="form-control" value="Potvrdi"/>
+          </form>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAhgTIRBgXAfCNEJYl45amYpygDSqp2-jA",
+        authDomain: "testbaza-336cb.firebaseapp.com",
+        databaseURL: "https://testbaza-336cb.firebaseio.com",
+        projectId: "testbaza-336cb",
+        storageBucket: "testbaza-336cb.appspot.com",
+        messagingSenderId: "338827656578",
+        appId: "1:338827656578:web:fd047c3cbc9fc0f270239b",
+        measurementId: "G-54RBRR99RH"
+      };
+
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      let db = firebase.firestore();
+    </script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

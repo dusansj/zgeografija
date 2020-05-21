@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#nav {
+  background-color: #555555;
+  opacity: 95%;
+  border-bottom: 2px solid #ffffff;
+  background-image: url("../images/navback.png");
+}
+
+#menu {
+  padding: 0;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0 0 0 100px;
+  padding: 20px 0 20px 0;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#terms {
+  padding-left: 50px;
+}
+
+#hof {
+  padding-left: 50px;
+}
+
+#hi {
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  color: #ffffff;
+}
+
+#user_logo {
+  position: relative;
+  top: 30px;
+  padding-left: 10px;
+  display: inline;
+  font-size: 16px;
+}
+
+#formUsername {
+  padding-top: 10%;
+  text-align: center;
+}
+
+/*
+#inputUsername,
+#submitUsername {
+  width: 85%;
+  background-color: #555555;
+  opacity: 0.5;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin-top: 5%;
+}
+*/
+
+#inputUsername, #submitUsername {
+  border-color: rgba(229, 103, 23, 0.8);
+  border: 1px solid;
+  color: darkblue;
+}
+
+#inputUsername::placeholder {
+  color: darkblue;
+}
+
+#inputUsername::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: #ffffff;
+}
+#inputUsername::-moz-input-placeholder {
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+/*
+input, textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+}
+*/
+.responsive {
+  padding-top: 25%;
+  width: 110%;
+  height: auto;
+}
+
+#home_page {
+  background-color: darkgreen;
+}

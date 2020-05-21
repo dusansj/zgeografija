@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#score {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 20%;
+  color: #ffffff;
+  font-size: 36px;
+  font-style: italic;
+}
+
+#bestplayers {
+  font-weight: bold;
+}
