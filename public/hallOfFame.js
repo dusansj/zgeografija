@@ -26,7 +26,7 @@ export class Hof {
         });
         entries.reverse();
         for (let i = 0; i < 5; i++) {
-          score.innerHTML += `<li>${entries[i]}</li>`;
+          score.innerHTML += `<span style="background-color:white;">${entries[i]}</span><br>`;
         }
       })
       .catch((err) => {

@@ -30,17 +30,16 @@ export class Term {
     return this._pojam;
   }
 
-  async addTerm(term) {
+async addTerm(term) {
     let dateTmp = new Date();
 
-    //Kreiramo dokument koji cemo dodati bazi
-    let dokument = {
-      pocetnoSlovo: term.slice(0, 1),
-      pojam: term,
-      kategorija: this.kategorija,
-      korisnik: this.username,
-      vreme: firebase.firestore.Timestamp.fromDate(dateTmp),
-    };
+   let dokument = {
+    pocetnoSlovo: term.slice(0, 1),
+    pojam: term,
+    kategorija: this.kategorija,
+    korisnik: this.username,
+    vreme: firebase.firestore.Timestamp.fromDate(dateTmp),
+ };
 
     //Dodamo dokument promenljivoj koja je povukla celu kolekciju iz base
     let response = await this.pojmovi.add(dokument);

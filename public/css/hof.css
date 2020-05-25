@@ -8,6 +8,76 @@ body {
 }
 
 #score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  padding-left: 10px;
+  width: 180px;
+  height: 220px;
+  background-color: green;
+  border-radius: 8px;
+  border: orange 3px;
+  border-style: ridge;
+}
+
+#nav {
+  background-color: #555555;
+  opacity: 95%;
+  border-bottom: 2px solid #ffffff;
+  background-image: url("../images/navback.png");
+}
+
+#menu {
+  padding: 0;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0 0 0 100px;
+  padding: 20px 0 20px 0;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#terms {
+  padding-left: 50px;
+}
+
+#hof {
+  padding-left: 50px;
+}
+
+#hi {
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  color: #ffffff;
+}
+
+#user_logo {
+  position: relative;
+  top: 30px;
+  padding-left: 10px;
+  display: inline;
+  font-size: 16px;
+}
+
+#formUsername {
+  padding-top: 10%;
+  text-align: center;
+}
+
+/*
+#score {
   list-style-type: none;
   text-align: center;
   padding-top: 20%;
@@ -19,3 +89,4 @@ body {
 #bestplayers {
   font-weight: bold;
 }
+*/

@@ -9,23 +9,25 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hof.css" />
     <title>Dobrodošli Na Sajt Zanimljive Geografije!</title>
   </head>
   <body>
     <div class="container-fluid">
       <div id="nav" class="row">
         <div id="menu" class="col-sm-9">
-          <ul>
-            <li>
-              <a id="home_page" href="index.html">POČETNA STRANA</a>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" id="home_page" href="index.html"><- Nazad na početnu stranu</a>
             </li>
-            <li>
-              <a id="terms" href="terms.html">PREDLOG POJMOVA</a>
+            <li class="nav-item">
+              <a class="nav-link" id="terms" href="terms.html">Pojmovi</a>
             </li>
-            <li>
-              <a id="hof" href="#">HALL OF FAME</a>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" id="hof" href="#">HALL OF FAME</a>
             </li>
+            -->
           </ul>
         </div>
         <div class="col-sm-3">
@@ -34,7 +36,7 @@
         </div>
       </div>
       <div id="score">
-        <h2 id="bestplayers">Najbolji igrači:</h2>
+        <h2 id="bestplayers">HALL OF FAME:</h2>
       </div>
     </div>
 
@@ -66,5 +68,6 @@
       let db = firebase.firestore();
     </script>
     <script src="app.js" type="module"></script>
+    <script src="hallOfFame.js" type="module"></script>
   </body>
 </html>
