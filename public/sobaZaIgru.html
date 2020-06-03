@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <title>Dobrodošli Na Sajt Zanimljive Geografije!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="nav" class="row">
+        <div id="menu" class="col-sm-9">
+          <ul>
+            <li>
+              <a id="home_page" href="index.html">POČETNA STRANA</a>
+            </li>
+            <li>
+              <a id="terms" href="terms.html">PREDLOG POJMOVA</a>
+            </li>
+            <li>
+              <a id="hof" href="hallOfFame.html">HALL OF FAME</a>
+            </li>
+            <!-- <li>
+              <a id="gameRoom" href="#">ZAPOČNI IGRU</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <div id="hi"></div>
+          <img src="images/User.png" id="user_logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div id="start">
+            <!-- <br /> -->
+            <div id="slovo"></div>
+            <div id="timer"></div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <button id="startBtn" class="btn btn-primary">Pokreni igru</button>
+          <form id="gameForm">
+            <div>
+              <label>Država</label>
+              <input
+                id="drzava"
+                class="inputField"
+                type="text"
+                placeholder="Unesi državu..."
+              />
+            </div>
+            <div>
+              <label>Grad</label>
+              <input
+                id="grad"
+                class="inputField"
+                type="text"
+                placeholder="Unesi grad..."
+              />
+            </div>
+            <div>
+              <label>Reka</label>
+              <input
+                id="reka"
+                class="inputField"
+                type="text"
+                placeholder="Unesi reku..."
+              />
+            </div>
+            <div>
+              <label>Planina</label>
+              <input
+                id="planina"
+                class="inputField"
+                type="text"
+                placeholder="Unesi planinu..."
+              />
+            </div>
+            <div>
+              <label>Životinja</label>
+              <input
+                id="zivotinja"
+                class="inputField"
+                type="text"
+                placeholder="Unesi životinju..."
+              />
+            </div>
+            <div>
+              <label>Biljka</label>
+              <input
+                id="biljka"
+                class="inputField"
+                type="text"
+                placeholder="Unesi biljku..."
+              />
+            </div>
+            <div>
+              <label>Predmet</label>
+              <input
+                id="predmet"
+                class="inputField"
+                type="text"
+                placeholder="Unesi predmet..."
+              />
+            </div>
+            <input
+              type="submit"
+              id="btnConfirm"
+              class="btn btn-primary"
+              value="Potvrdi"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div id="pp" class="col-md-6">
+          <div id="pobednik"></div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div id="ukupanRezultat">
+            <ul id="resultUser">
+              <h3>Igrač</h3>
+            </ul>
+            <ul id="poeniU">
+              <h3>Poeni</h3>
+              <li id="pU0"></li>
+              <li id="pU1"></li>
+              <li id="pU2"></li>
+              <li id="pU3"></li>
+              <li id="pU4"></li>
+              <li id="pU5"></li>
+              <li id="pU6"></li>
+            </ul>
+            <ul id="poeniC">
+              <h3>Poeni</h3>
+              <li id="pC0"></li>
+              <li id="pC1"></li>
+              <li id="pC2"></li>
+              <li id="pC3"></li>
+              <li id="pC4"></li>
+              <li id="pC5"></li>
+              <li id="pC6"></li>
+            </ul>
+            <ul id="resultComp">
+              <h3>Kompjuter</h3>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div id="uk" class="col-md-2">
+          <div id="ukupnoP">
+            <h3>Rezultat:</h3>
+            <span id="ukupnoPoenaUser"></span>-<span
+              id="ukupnoPoenaComp"
+            ></span>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div id="proba" class="col-md-4"></div>
+        <div id="divNI" class="col-md-4">
+          <button id="novaigra" class="btn btn-primary">Igraj ponovo</button>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAhgTIRBgXAfCNEJYl45amYpygDSqp2-jA",
+        authDomain: "testbaza-336cb.firebaseapp.com",
+        databaseURL: "https://testbaza-336cb.firebaseio.com",
+        projectId: "testbaza-336cb",
+        storageBucket: "testbaza-336cb.appspot.com",
+        messagingSenderId: "338827656578",
+        appId: "1:338827656578:web:fd047c3cbc9fc0f270239b",
+        measurementId: "G-54RBRR99RH"
+      };
+
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      let db = firebase.firestore();
+    </script>
+    <script src="app.js" type="module"></script>
+    <script src="igraProtivKompjutera.js"></script>
+    <script>
+        if (!localStorage.username) {
+            document.body.innerHTML =
+                "Morate biti logovani da bi ste pristupili ovoj stranici! <br><a href='index.html'>POVRATAK NAZAD</a>";
+            document.body.style.background = "#ffffff";
+            ////alert("Morate biti logovani da bi ste pristupili ovoj stranici!");
+            ////window.location.href = "index.html";
+            
+        }
+            
+        </script>
+  </body>
+</html>

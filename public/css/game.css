@@ -1,0 +1,143 @@
+#startBtn {
+    width: 30%;
+    border-radius: 6px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50%;
+}
+  
+#divNI {
+    text-align: center;
+}
+
+#novaigra {
+    font-size: 1.2rem;
+    width: 40%;
+    font-weight: bold;
+    display: none;
+    margin-top: 5%;
+}
+
+#slovo,
+#timer {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color:#ffffff;
+    color: black;
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+}
+#slovo {
+    width: 20%;
+}
+
+#timer {
+    font-size: 1.5rem;
+}
+
+#gameForm {
+    padding-top: 10%;
+    width: 100%;
+    display: none;
+}
+
+.inputField {
+    width: 35%;
+    font-size: 1.5rem;
+    background-color:#ffffff;
+}
+
+#gameForm label {
+    width: 35%;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#btnConfirm {
+    width: 30%;
+    margin-left: 20%;
+}
+
+#ukupanRezultat,
+#pobednik {
+    text-align: center;
+}
+
+#resultUser,
+#resultComp,
+#poeniU,
+#poeniC {
+    width: 30%;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    list-style-type: none;
+    display: none;
+    border-radius: 10px;
+}
+
+#poeniU,
+#poeniC {
+    list-style: none;
+    display: none;
+    width: 15%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#resultUser h3,
+#resultComp h3,
+#poeniU h3,
+#poeniC h3 {
+    border-bottom: 1px dashed black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+#resultUser > li,
+#resultComp > li {
+    font-size: 1.2rem;
+}
+
+#uk {
+    text-align: center;
+}
+
+#ukupnoP {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    display: none;
+    padding: 3%;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#pp {
+    text-align: center;
+}
+
+#pobednik {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    font-size: 2.5rem;
+    background-color: #ffffff;
+    color: black;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}

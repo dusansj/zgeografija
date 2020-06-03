@@ -32,9 +32,16 @@ export class Term {
 
 async addTerm(term) {
     let dateTmp = new Date();
+    let pocetnoSlovo = this.pojam;
+    if (pocetnoSlovo.startsWith("Nj") || pocetnoSlovo.startsWith("Lj") || pocetnoSlovo.startsWith("Dž")) {
+      pocetnoSlovo = pocetnoSlovo.slice(0,2) 
+      } 
+      else {
+          pocetnoSlovo = pocetnoSlovo.slice(0,1);
+      }
 
    let dokument = {
-    pocetnoSlovo: term.slice(0, 1),
+    pocetnoSlovo: pocetnoSlovo,
     pojam: term,
     kategorija: this.kategorija,
     korisnik: this.username,
@@ -70,3 +77,4 @@ async addTerm(term) {
       });
   }
 }
+

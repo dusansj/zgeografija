@@ -24,10 +24,13 @@
             </li>
             -->
             <li class="nav-item">
-              <a class="nav-link" id="terms" href="terms.html">Pojmovi</a>
+              <a class="nav-link" id="terms" href="terms.html" data-toggle="tooltip" title="Unesi nove pojmove!">Pojmovi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="hof" href="hallOfFame.html">HALL OF FAME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gameRoom" href="sobaZaIgru.html">IGRAJ SE!</a>
             </li>
           </ul>
         </div>
@@ -48,7 +51,7 @@
               placeholder="Unesi korisničko ime..."
             />
             <br>
-            <input type="submit" id="submitUsername" class="form-control" value="Potvrdi"/>
+            <input type="submit" id="submitUsername" class="form-control" value="Potvrdi" onclick="eatFood();"/>
           </form>
         </div>
         <div class="col-sm-4"></div>
@@ -83,5 +86,5 @@
       let db = firebase.firestore();
     </script>
     <script src="app.js" type="module"></script>
-  </body>
+   </body>
 </html>

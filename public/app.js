@@ -1,7 +1,7 @@
 import { Term } from "./terms.js";
 import { Korisnik } from "./korisnik.js";
 
-// DOM
+//DOM Elementi
 let liElPojam = document.querySelector("#terms");
 let lihof = document.querySelector("#hof");
 let formUsername = document.querySelector("#formUsername");
@@ -52,7 +52,7 @@ if (formUsername) {
     location.href = "terms.html"
   });
 }
-
+//Validacija upisa
 let validFunc = (str) => {
   let regExp1 = /[\s]/gi;
   let regExp2 = /[^šđčćž\w]/gi;
@@ -78,3 +78,4 @@ if (formTerm) {
     formTerm.reset();
   });
 }
+

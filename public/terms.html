@@ -95,11 +95,16 @@
     </script>
     <script src="app.js" type="module"></script>
     <script>
-      if (!localStorage.username) {
-        document.body.innerHTML =
-          "Morate biti logovani da bi ste pristupili ovoj stranici!";
-        document.body.style.background = "#ffffff";
-      }
+       if (!localStorage.username) {
+          document.body.innerHTML =
+            "Morate biti logovani da bi ste pristupili ovoj stranici! <br><a href='index.html'>POVRATAK NAZAD</a>";
+          document.body.style.background = "#ffffff";
+         ////alert("Morate biti logovani da bi ste pristupili ovoj stranici!");
+         ////window.location.href = "index.html";
+         
+       }
+         
     </script>
+    
   </body>
 </html>
